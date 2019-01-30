@@ -1,7 +1,7 @@
 # OhMyPosh-CoolTheme
 
 ## About
-This is a cool (as in temperature) theme for [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh) powershell theme engine.
+This is a cool (as in temperature) theme for [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh) powershell theme engine. This theme is based on Paradox theme that is supplied with Oh-My-Posh
 
 ![Preview1](/Screenshots/Screenshot.PNG)
 
