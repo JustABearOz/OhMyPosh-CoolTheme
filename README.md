@@ -3,6 +3,8 @@
 ## About
 This is a cool (as in temperature) theme for [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh) powershell theme engine.
 
+![Preview1](./Screenshots/Screenshot.png)
+
 ## Installation
 Follow the installation instructions from [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh) to install Oh-My-Posh
 
