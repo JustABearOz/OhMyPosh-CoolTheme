@@ -8,7 +8,7 @@ This is a cool (as in temperature) theme for [Oh-My-Posh](https://github.com/Jan
 ## Installation
 Follow the installation instructions from [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh) to install Oh-My-Posh
 
-Copy the file Cool.psm1 to the oh-my-posh custom theme directory
+From powershell, Run the script install.ps1. This will copy cool.psm1 into the theme directory specified by ```$GitPromptSettings.MyThemesLocation```
 
 Edit your powershell profile to include 
 ```
@@ -19,7 +19,7 @@ Set-Theme Cool
 
 Restart powershell
 
-If you do not want your username in the custom prompt, add the following to your powershell profile
+Additionally, if you do not want your username in the custom prompt, add the following to your powershell profile
 
 ```
 $DefaultUser = '<username>'
