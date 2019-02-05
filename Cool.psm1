@@ -86,4 +86,5 @@ $sl.Colors.VirtualEnvBackgroundColor = [System.ConsoleColor]::Red
 $sl.Colors.VirtualEnvForegroundColor = [System.ConsoleColor]::White
 $sl.Colors.CommandFailedIconForegroundColor = [System.ConsoleColor]::Red
 $sl.Colors.GitNoLocalChangesAndAheadColor = [System.ConsoleColor]::DarkBlue
+$sl.Colors.GitLocalChangesColor = [System.ConsoleColor]::DarkGray
 ##$sl.PromptSymbols.ElevatedSymbol = '!'
