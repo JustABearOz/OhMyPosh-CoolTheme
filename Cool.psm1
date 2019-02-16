@@ -67,7 +67,7 @@ function Write-Theme {
     }
 
     #$prompt += Write-Prompt -Object ($sl.PromptSymbols.PromptIndicator) -ForegroundColor $sl.Colors.PromptBackgroundColor
-    $prompt += ''
+    $prompt += ' '
     $prompt
 }
 
