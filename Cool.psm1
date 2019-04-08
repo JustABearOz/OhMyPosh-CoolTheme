@@ -59,7 +59,6 @@ function Write-Theme {
     # Writes the postfix to the prompt
     $prompt += Write-Prompt -Object $sl.PromptSymbols.SegmentForwardSymbol -ForegroundColor $lastColor
 
-
     # $prompt += Set-Newline
 
     if ($with) {
@@ -67,7 +66,7 @@ function Write-Theme {
     }
 
     #$prompt += Write-Prompt -Object ($sl.PromptSymbols.PromptIndicator) -ForegroundColor $sl.Colors.PromptBackgroundColor
-    $prompt += ''
+    $prompt += ' '
     $prompt
 }
 
