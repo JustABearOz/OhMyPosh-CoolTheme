@@ -26,14 +26,19 @@ function Write-Theme {
 
     ##$prompt += Set-CursorForRightBlockWrite -textLength ($timestamp.Length + 1)
     $prompt += Write-Prompt " $timeStamp " -ForegroundColor $sl.Colors.PromptBackgroundColor -BackgroundColor $sl.Colors.PromptSymbolColor
-    $prompt += Write-Prompt -Object "$($sl.PromptSymbols.SegmentForwardSymbol)" -ForegroundColor $sl.Colors.PromptSymbolColor -BackgroundColor $sl.Colors.PromptBackgroundColor
 
     $user = [System.Environment]::UserName
     $computer = [System.Environment]::MachineName
     $path = Get-FullPath -dir $pwd
 
     if (Test-NotDefaultUser($user)) {
-        $prompt += Write-Prompt -Object "$user@$computer " -ForegroundColor $sl.Colors.SessionInfoForegroundColor -BackgroundColor $sl.Colors.SessionInfoBackgroundColor
+        $prompt += Write-Prompt -Object "$($sl.PromptSymbols.SegmentForwardSymbol)" -ForegroundColor $sl.Colors.PromptSymbolColor -BackgroundColor $sl.Colors.SessionInfoBackgroundColor
+        $prompt += Write-Prompt -Object " $user@$computer " -ForegroundColor $sl.Colors.SessionInfoForegroundColor -BackgroundColor $sl.Colors.SessionInfoBackgroundColor
+        $prompt += Write-Prompt -Object "$($sl.PromptSymbols.SegmentForwardSymbol)" -ForegroundColor $sl.Colors.SessionInfoBackgroundColor -BackgroundColor $sl.Colors.PromptBackgroundColor
+    }
+    else
+    {
+        $prompt += Write-Prompt -Object "$($sl.PromptSymbols.SegmentForwardSymbol)" -ForegroundColor $sl.Colors.PromptSymbolColor -BackgroundColor $sl.Colors.PromptBackgroundColor
     }
 
     if (Test-VirtualEnv) {
@@ -86,4 +91,6 @@ $sl.Colors.VirtualEnvForegroundColor = [System.ConsoleColor]::White
 $sl.Colors.CommandFailedIconForegroundColor = [System.ConsoleColor]::Red
 $sl.Colors.GitNoLocalChangesAndAheadColor = [System.ConsoleColor]::DarkBlue
 $sl.Colors.GitLocalChangesColor = [System.ConsoleColor]::DarkGray
+$sl.Colors.SessionInfoForegroundColor = [System.ConsoleColor]::Blue
+$sl.Colors.SessionInfoBackgroundColor = [System.ConsoleColor]::Gray
 ##$sl.PromptSymbols.ElevatedSymbol = '!'
