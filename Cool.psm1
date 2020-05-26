@@ -93,4 +93,4 @@ $sl.Colors.GitNoLocalChangesAndAheadColor = [System.ConsoleColor]::DarkBlue
 $sl.Colors.GitLocalChangesColor = [System.ConsoleColor]::DarkGray
 $sl.Colors.SessionInfoForegroundColor = [System.ConsoleColor]::Blue
 $sl.Colors.SessionInfoBackgroundColor = [System.ConsoleColor]::Gray
-##$sl.PromptSymbols.ElevatedSymbol = '!'
+$sl.PromptSymbols.ElevatedSymbol = '🔓'
